@@ -10,7 +10,7 @@
 
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
     <link rel="stylesheet" href="https://gitcdn.link/repo/angular/bower-material/master/angular-material.css">
-    <link rel="stylesheet" href="assets/app.css"/>
+    <link rel="stylesheet" href="app/assets/app.css"/>
 
       <!-- Angular Material Dependencies -->
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
@@ -19,6 +19,10 @@
 
       <!-- Angular Material Javascript using GitCDN to load directly from `bower-material/master` -->
       <script src="https://gitcdn.link/repo/angular/bower-material/master/angular-material.js"></script>
+
+      <script src="app/src/users/Users.js"></script>
+      <script src="app/src/users/UserController.js"></script>
+      <script src="app/src/users/UserService.js"></script>
 
     <style type="text/css">
         /**
@@ -65,14 +69,8 @@
 
     </div>
 
-    <script src="../node_modules/angular/angular.js"></script>
-    <script src="../node_modules/angular-animate/angular-animate.js"></script>
-    <script src="../node_modules/angular-aria/angular-aria.js"></script>
-    <script type="text/javascript" src="../node_modules/angular-material/angular-material.js"></script>
 
-    <script src="./src/users/Users.js"></script>
-    <script src="./src/users/UserController.js"></script>
-    <script src="./src/users/UserService.js"></script>
+
 
     <script type="text/javascript">
 
@@ -81,13 +79,13 @@
               .config(function($mdThemingProvider, $mdIconProvider){
 
                   $mdIconProvider
-                      .defaultIconSet("./assets/svg/avatars.svg", 128)
-                      .icon("menu"       , "./assets/svg/menu.svg"        , 24)
-                      .icon("share"      , "./assets/svg/share.svg"       , 24)
-                      .icon("google_plus", "./assets/svg/google_plus.svg" , 512)
-                      .icon("hangouts"   , "./assets/svg/hangouts.svg"    , 512)
-                      .icon("twitter"    , "./assets/svg/twitter.svg"     , 512)
-                      .icon("phone"      , "./assets/svg/phone.svg"       , 512);
+                      .defaultIconSet("app/assets/svg/avatars.svg", 128)
+                      .icon("menu"       , "app/assets/svg/menu.svg"        , 24)
+                      .icon("share"      , "app/assets/svg/share.svg"       , 24)
+                      .icon("google_plus", "app/assets/svg/google_plus.svg" , 512)
+                      .icon("hangouts"   , "app/assets/svg/hangouts.svg"    , 512)
+                      .icon("twitter"    , "app/assets/svg/twitter.svg"     , 512)
+                      .icon("phone"      , "app/assets/svg/phone.svg"       , 512);
 
                       $mdThemingProvider.theme('default')
                           .primaryPalette('brown')
